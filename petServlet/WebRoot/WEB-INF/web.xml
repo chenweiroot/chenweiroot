@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <!-- form1 -->
+  <servlet>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>servlet.ServletOne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+  <!-- form2 -->
+  <servlet>
+    <servlet-name>userServlet2</servlet-name>
+    <servlet-class>servlet.ServletTwo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userServlet2</servlet-name>
+    <url-pattern>/userServlet2</url-pattern>
+  </servlet-mapping>
+  <!-- form3 -->
+  <servlet>
+    <servlet-name>userServlet3</servlet-name>
+    <servlet-class>servlet.ServletThree</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userServlet3</servlet-name>
+    <url-pattern>/userServlet3</url-pattern>
+  </servlet-mapping>
+  <!-- form4 -->
+    <servlet>
+    <servlet-name>userServlet4</servlet-name>
+    <servlet-class>servlet.ServletFour</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userServlet4</servlet-name>
+    <url-pattern>/userServlet4</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 过滤器 -->
+  <filter>
+  	<filter-name>filter1</filter-name>
+  	<filter-class>filterQi.filterQ</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>filter1</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+</web-app>
